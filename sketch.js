@@ -8,16 +8,17 @@ function setup() {
   background(255);
   noStroke();
 }
-
+var count = 1750;
 function draw() {
   if(mouseIsPressed){
+    count = 1750;
     background(255);
-  } else {
-    const frequency = 0.05
-    var red   = Math.sin(frequency*mouseX + 0) * 127 + 128;
-    var green = Math.sin(frequency*mouseX + 2) * 127 + 128;
-    var blue  = Math.sin(frequency*mouseX + 4) * 127 + 128;
-    fill(red, green, blue);
-    ellipse(mouseX, mouseY, randInt(25, 40), randInt(25, 40));
   }
+  const frequency = 0.05
+  var red   = Math.sin(frequency*count + 0) * 127 + 128;
+  var green = Math.sin(frequency*count + 2) * 127 + 128;
+  var blue  = Math.sin(frequency*count + 4) * 127 + 128;
+  fill(red, green, blue);
+  count -= 3;
+  ellipse(displayWidth / 2, displayHeight / 2, count);
 }
