@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="../static/styles/graph.css">
+    <meta charset="utf-8" />
+    <title>Graphing</title>
+  </head>
+  <body>
+    <main>
+      <div class="sidebar" id="sidebar">
+        <input type="button" onclick="add_function()" value="+" id="func">
+        <div class="function-input">
+          <input type="text" id="func-input-0" placeholder="x+3">
+          <div class="row">
+            <input type="color" id="color-picker" value="#ffffff">
+            <input type="number" id="size-input" placeholder="3" max="999" min="1">
+          </div>
+        </div>
+      </div>
+      <script src="../static/js/parser.js"></script>
+      <script src="../static/js/misc.js"></script>
+      <script src="../static/js/sketch.js"></script>
+    </main>
+  </body>
+</html>

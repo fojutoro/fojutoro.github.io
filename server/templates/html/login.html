@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/login.css">
+    <title>Log in</title>
+</head>
+<body>
+    <script src="../static/js/misc.js"></script>
+    <div class="container">
+        <form id="login-form">
+            <label>Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label>Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <!-- <div id="stay-signed">
+                <label>Remember log in.</label>
+                <input name="save-login" type="checkbox" id="remember">
+            </div> -->
+
+            <button onclick="handleLogin()" type="button" id="login">Login</button>
+        </form>
+        <label id="register-label">Don't have an account?</label>
+        <a href="/register"><button type="button" id="register">Register</button></a>
+    </div>
+    <script src="../static/js/login.js"></script>
+</body>
+</html>

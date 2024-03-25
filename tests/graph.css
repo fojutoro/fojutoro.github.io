@@ -1,0 +1,181 @@
+* {
+  font-family: monospace;
+  border: none;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  position: relative;
+}
+
+canvas {
+  position: relative; 
+  z-index: 1;
+}
+
+#func-input:focus {
+  outline-width: 0;
+}
+
+a img {
+  width: 25px;
+  height: 25px;
+}
+
+p {
+  margin: 0;
+  color: white;
+}
+
+.function {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2em;
+  border-radius: 7px;
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#func-input-0 {
+  outline: none;
+  margin-top: 2px;
+  border: none;
+  border-radius: 10px;
+  width: 98.5%;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+input[type=button] {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: black 1px solid;
+  margin-top: 15px;
+  font-size: 2em;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  background-color: black;
+}
+
+#size-input {
+  font-size: 0.7em;
+  width: 25%;
+  height: min-content;
+}
+
+.row{
+  margin: 2px 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.function-input {
+  height: min-content;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 0 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 85%;
+}
+
+
+input[type=color]{
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  height: 1.5em;
+}
+
+.sidebar {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  align-content: start;
+  position: absolute;
+  left: 1%;
+  width: 20%;
+  top: 2%;
+  height: 96%;
+  background-color: white;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+#upload {
+  position: absolute;
+  /* bottom: -100px; */
+  size: auto;
+}
+
+#sidebar #upload img {
+  width: 75px;
+  height: 75px;
+}
+
+.publish {
+  color: white;
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background-color: black;
+  left: 12.5%;
+  top: 12.5%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.publish div label {
+  font-size: 3em;
+}
+
+.publish input {
+  font-size: 2em;
+  font-family: monospace;
+  width: max-content;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.publish div textarea {
+  width: 45em;
+  height: 10em;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.publish div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.publish a button {
+  width: 10em;
+  height: 5em;
+  margin-top: -45px;
+  margin-left: -70px;
+  border-radius: 15px;
+}

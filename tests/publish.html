@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="graph.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="publish">
+        <div class="">
+            <label for="Title">Title:</label>
+            <input type="text" id="title" name="title" minlength="2" maxlength="30" required>
+        </div>
+        
+        <div class="">
+            <label for="comment">Comment</label>
+            <!-- <input type="text" id="comment" name="comment" minlength="2"> -->
+            <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
+        </div>
+        
+        <div class="">
+            <label for="thumbnail">Thumbnail:</label>
+            <input type="file" id="thumbnail" accept=".png,.jpg,.jpeg"name="thumbnail">
+        </div>
+    
+        <a><button id="upload" type="button" onclick="handleUpload()">Upload</button></a>
+        <a onclick=""><img src="../static/icons/close.png" alt=""></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "public": {
+        "host": "127.0.0.1",
+        "port": "3306",
+        "database": "mp_db"
+    },
+    "setup":{
+        "user": "root",
+        "password": "mysql"
+    },
+    "db": {
+        "user": "db",
+        "password": "superhardpassword123@"
+   }
+}

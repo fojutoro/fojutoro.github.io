@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(30, 30, 30);
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 300px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+#login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+
+#register {
+    margin: 0;
+}
+
+#register-label {
+    font-size: 0.7em;
+}
+
+#login {
+    margin-top: 20px;
+}
+
+#forgot-password {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#stay-signed {
+    display: flex;
+    font-size: 0.7em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#stay-signed input {
+    margin: auto 3px;
+    box-sizing: border-box;
+    width: min-content;
+}
+
+@media only screen and (max-width: 600px) {
+    #login-container {
+        width: 80%;
+    }
+}
