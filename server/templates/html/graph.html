@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" type="image/x-icon" href="../static/icons/icon.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/addons/p5.sound.min.js"></script> -->
     <link rel="stylesheet" type="text/css" href="../static/styles/graph.css">
@@ -10,7 +11,10 @@
   <body>
     <main>
       <div class="sidebar" id="sidebar">
-        <input type="button" onclick="add_function()" value="+" id="func">
+        <div class="top-bar">
+          <a href="/" id="back"><</a>
+          <input type="button" onclick="add_function()" value="+" id="func">
+        </div>
         <div class="function-input">
           <input type="text" id="func-input-0" placeholder="x+3">
           <div class="row">

@@ -39,6 +39,7 @@ if(urlParams.get('uuid') != null){
     })
     let a = document.createElement("a")
     a.className = "publish-button"
+    a.id = "like-button"
     a.onclick = likePost
     let img = document.createElement('img');
     img.src = "../static/icons/like.png"
@@ -181,12 +182,8 @@ function try_upload(){
         comment: comment,
         functions: stringify_functions(functions)
     };
-
-    if(thumbnail.files.length == 1){
-        request['thumbnail'] = thumbnail.files[0];
-    }
-    send_req(request);
     close_window();
+    send_req(request);
 }
 
 function upload_screen(){
@@ -203,17 +200,12 @@ function upload_screen(){
         <label for="comment">Comment</label>
         <textarea name="comment" id="comment" cols="30" rows="5"></textarea>
     </div>
-    
-    <div class="">
-        <label for="thumbnail">Thumbnail:</label>
-        <input type="file" id="thumbnail" accept=".png,.jpg,.jpeg"name="thumbnail">
-    </div>
 
     <a><button id="upload" type="button">Upload</button></a>
     `
     document.getElementsByTagName('main')[0].insertBefore(container, document.getElementsByTagName('main')[0].firstChild)
     document.getElementById("upload").onclick = try_upload;
-    document.getElementById("close").onclick = close
+    document.getElementById("close").onclick = close_window
 }
 
 function xInput(val){   

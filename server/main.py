@@ -38,7 +38,7 @@ def handle_board():
                 return render_template('board.html')
             else:
                 return generate_posts(posts)
-    return render_template('login.html')
+    return render_template('welcome.html')
 
 
 @app.errorhandler(404)
@@ -47,4 +47,4 @@ def handle_bad_request(e):
 
 
 if __name__ == '__main__':
-    app.run(port=5003)
+    app.run(port=5004)
