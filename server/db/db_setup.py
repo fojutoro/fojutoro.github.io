@@ -120,8 +120,8 @@ def create_user_db(connection, conf):
     cursor = connection.cursor()
     
     user_query = f"""
-    CREATE USER IF NOT EXISTS '{conf['db']['user']}'@'%' IDENTIFIED BY '{conf['db']['password']}';
-    GRANT SELECT, INSERT ON {conf['public']['database']}.* TO '{conf['db']['user']}'@'%';
+    CREATE USER IF NOT EXISTS '{conf['db']['user']}'@'localhost' IDENTIFIED BY '{conf['db']['password']}';
+    GRANT SELECT, INSERT ON {conf['public']['database']}.* TO '{conf['db']['user']}'@'localhost';
     FLUSH PRIVILEGES;
     """
 
